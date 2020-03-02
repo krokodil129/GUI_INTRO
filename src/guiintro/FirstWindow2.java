@@ -37,7 +37,7 @@ public class FirstWindow2 {
 			}
 		});
 		btnButton.setBounds(100, 76, 75, 25);
-		btnButton.setText("Button1");
+		btnButton.setText("MyButton");
 
 		shell.open();
 		shell.layout();
