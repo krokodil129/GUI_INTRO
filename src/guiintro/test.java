@@ -152,11 +152,11 @@ public class test {
 		
 		Label lblZahl = new Label(shell, SWT.NONE);
 		lblZahl.setBounds(57, 86, 55, 15);
-		lblZahl.setText("Zahl1");
+		lblZahl.setText("Zahl 1");
 		
 		Label lblZahl_1 = new Label(shell, SWT.NONE);
 		lblZahl_1.setBounds(293, 86, 55, 15);
-		lblZahl_1.setText("Zahl2");
+		lblZahl_1.setText("Zahl 2");
 		
 		Button btnClear = new Button(shell, SWT.NONE);
 		btnClear.addSelectionListener(new SelectionAdapter() {
