@@ -52,10 +52,10 @@ public class test {
 		shell.setText("SWT Application");
 		
 		entryField = new Text(shell, SWT.BORDER);
-		entryField.setBounds(57, 118, 76, 21);
+		entryField.setBounds(272, 118, 76, 21);
 		
 		resultField = new Text(shell, SWT.BORDER);
-		resultField.setBounds(293, 118, 76, 21);
+		resultField.setBounds(57, 118, 76, 21);
 		
 		Button button = new Button(shell, SWT.NONE);
 		button.addSelectionListener(new SelectionAdapter() {
@@ -137,7 +137,7 @@ public class test {
 
 				//
 
-				ergebnis = ergebnis * wert;
+				ergebnis = ergebnis / wert;
 
 				//
 
@@ -157,6 +157,17 @@ public class test {
 		Label lblZahl_1 = new Label(shell, SWT.NONE);
 		lblZahl_1.setBounds(293, 86, 55, 15);
 		lblZahl_1.setText("Zahl2");
+		
+		Button btnClear = new Button(shell, SWT.NONE);
+		btnClear.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				resultField.setText("");		
+				entryField.setText("");
+			}
+		});
+		btnClear.setBounds(172, 230, 75, 25);
+		btnClear.setText("Clear");
 
 	}
 
